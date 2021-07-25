@@ -6,7 +6,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-
+.landing{
+    overflow-x: hidden;
+}
 
 .container{
    width: 90%;
@@ -24,13 +26,19 @@ header{
 
 main{
     position: relative;
+    z-index: 10;
 }
 
 .wave_hero{
     position: absolute;
     z-index: -1;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wave_hero svg {
     width: 100%;
+    height: 100%;
 }
 .navbar ul{
     padding-top: .1;
@@ -47,7 +55,7 @@ main{
 .navbar ul .navbar__menu li a{
     text-decoration: none;
     display: inline-block;
-     color: var(--color-quinary); 
+    color: var(--color-quinary); 
     
 }
 
@@ -57,6 +65,22 @@ main{
     font-family: 'Comfortaa', cursive;
     
     
+}
+
+.navbar ul.show__menu{
+    position: fixed;
+    background: var(--color-ternary);
+    color: var(--color-secondary) ;
+    width: 100vw;
+}
+
+nav ul div.show{
+    top: 10vh;
+    width: 100vw !important;
+}
+
+.no_scroll{
+    overflow:hidden;
 }
 
 .navbar ul .navbar__item--logo .navbar__title a{
@@ -106,11 +130,26 @@ main{
     transition: .3s;
 }
 
+.navbar__btn{
+    margin-right: 30px;
+    padding-top: 5px;
+    font-size: 25px;
+    color: var(--color-quinary);
+    cursor: pointer;
+    display: none;
+}
 
-
+.navbar__btn:hover svg{
+    transform: scale(1.2);
+    
+}
 .svg{
     width: 550px;
     height: 500px;
+}
+
+.disable{
+    display: none ;
 }
 #plants{
     animation: coins_animated 3s infinite;
@@ -408,5 +447,100 @@ footer .list-information ul li a:hover{
         transform: translateY(5px);
     }100%{
         transform: translateY(0px);
+    }
+}
+
+
+@media  screen and (max-width : 1400px) {
+    
+
+    .hero__main{
+        flex-wrap: wrap;
+        
+    }
+
+    .hero__img{
+       height: 45%;
+    }
+}
+
+@media  screen and (max-width : 800px) {
+    
+
+    .hero__main{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .hero__img{
+       height: 40%;
+    }
+
+
+    .navbar__btn{
+        display: inline-flex;
+        
+    }
+
+    .navbar__btn svg{
+        width: 3rem;
+        height: 3rem;
+        fill: var(--color-quinary);
+    }
+
+
+    nav ul .navbar__menu{
+        
+        position: fixed;
+        
+    width: 100vw;
+    height: 90vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+        background: var(--color-quaternary);
+        
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        top: -100vh;
+        transition: all .5s;
+        z-index: 999;
+    }
+
+    .hero__main .hero_text{
+        margin-left: 0;
+    }
+    .navbar ul .navbar__menu li a{
+        color: whitesmoke;
+    }
+
+    .about {
+        padding-bottom: 40px;
+    }
+    .skills{
+        padding-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .skill__container{
+        width: 45%;
+    }
+
+    .title-blue{
+        top: 5px !important;
+    }
+
+    .contact .form-img .text{
+       margin-right: 36px; 
+    }
+    .contact div.form-container{
+        width: 75vw;
+    }
+
+    footer .author_page{
+        margin-top: 50px;
+        align-self: baseline;
     }
 }

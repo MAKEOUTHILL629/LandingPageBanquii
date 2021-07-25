@@ -18,34 +18,36 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="landing">
     <header>
-      <svg class="wave_hero" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M0.500015 2.50002C223.893 -128.397 753.149 -240.402 663.5 2.50002C633.851 82.8341 541.985 90.1031 527.5 174.5C497.25 350.753 981 238 981 238C981 238 1204.11 147.323 1352.5 155.5C1471.57 162.061 1545.81 174.106 1646.5 238C1941.94 425.482 1813.79 826.673 1646.5 1134C1339.17 1698.58 364.639 1663.72 0.500015 1134C-249.818 769.861 -380.751 225.893 0.500015 2.50002Z"
-          fill="url(#paint0_radial)"
-        />
-        <defs>
-          <radialGradient
-            id="paint0_radial"
-            cx="0"
-            cy="0"
-            r="1"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(375.495 789.28) rotate(12.1589) scale(1000.24 1840.36)"
-          >
-            <stop stop-color="#A8DADC" />
-            <stop offset="1" stop-color="#F1FAEE" stop-opacity="0.49" />
-          </radialGradient>
-        </defs>
-      </svg>
+      <div class="wave_hero">
+        <svg  fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.500015 2.50002C223.893 -128.397 753.149 -240.402 663.5 2.50002C633.851 82.8341 541.985 90.1031 527.5 174.5C497.25 350.753 981 238 981 238C981 238 1204.11 147.323 1352.5 155.5C1471.57 162.061 1545.81 174.106 1646.5 238C1941.94 425.482 1813.79 826.673 1646.5 1134C1339.17 1698.58 364.639 1663.72 0.500015 1134C-249.818 769.861 -380.751 225.893 0.500015 2.50002Z"
+            fill="url(#paint0_radial)"
+          />
+          <defs>
+            <radialGradient
+              id="paint0_radial"
+              cx="0"
+              cy="0"
+              r="1"
+              gradientUnits="userSpaceOnUse"
+              gradientTransform="translate(375.495 789.28) rotate(12.1589) scale(1000.24 1840.36)"
+            >
+              <stop stop-color="#A8DADC" />
+              <stop offset="1" stop-color="#F1FAEE" stop-opacity="0.49" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
 
       <nav class="navbar">
-        <ul>
+        <ul class="navbar__contenedor">
           <li class="navbar__item navbar__item--logo">
             <h1 class="navbar__title"><a href="#" data-aos="fade">banquii</a></h1>
           </li>
-          <div class="navbar__menu">
+          <div class="navbar__menu" data-aos="fade">
             <li class="navbar__menu-item">
               <a href="#">Cursos</a>
             </li>
@@ -62,7 +64,11 @@
               <a href="#">Iniciar sesión</a>
             </li>
           </div>
+          <span class="navbar__btn">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" ><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+          </span>
         </ul>
+        
       </nav>
 
       <section class="hero__main">
@@ -5304,6 +5310,7 @@
       </div>
     </footer>
     <script src="./js/testimonials.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
