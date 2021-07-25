@@ -1,0 +1,109 @@
+@import url(./variables.css);
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: #fafafa;
+}
+
+.contact .form-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 60vh;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: transform .5s;
+}
+
+.contact .form-container:hover{
+    transform: translateY(-10px) rotate(-1deg);
+}
+
+.contact .form-img{
+    position: absolute;
+    right: 0;
+    color: #fafafa;
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(to top, #a8dadcc0 0%, #f1faeeb9 100%), url(../resources/img/fondo-contacto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 100%);
+}
+
+.contact .form-img .text{
+    position: absolute;
+    right: 0;
+    padding: 30px;
+    margin-top: 36px;
+    text-align: right;
+    width: 60%;
+
+}
+
+.contact .form-img .text p{
+    font-size: 1rem;
+    color: var(--color-quinary);
+}
+
+.contact .form-img .text h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-quinary);
+}
+
+.form-body .header-form{
+    margin: 0 60px;
+
+}
+.form-body .header-form h2{
+    width: 45%;
+    color: var(--color-quaternary);
+}
+
+.form-body .header-form h2 span{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+    color: var(--color-quinary);
+    font-size: 2.3rem;
+}
+
+.form-group{
+    margin: 30px 60px;
+}
+
+.form-group .input-group{
+    width: 300px;
+    margin: 15px 0px;
+}
+
+.form-group .input-group input{
+    width: 100%;
+    padding: 8px 15px;
+    outline: none;
+    border-radius: 5px;
+   
+    border: 1px solid #ccc ;
+}
+
+.form-group .input-group button{
+    background: var(--color-primary);
+    color: #fafafa;
+    width: 100px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-group .input-group.right{
+    text-align: right;
+}
+
