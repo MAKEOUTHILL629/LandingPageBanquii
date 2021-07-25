@@ -22,6 +22,10 @@ header{
     height: 100vh;
 }
 
+main{
+    position: relative;
+}
+
 .wave_hero{
     position: absolute;
     z-index: -1;
@@ -225,6 +229,9 @@ header{
     font-weight: 500;
     font-size: 1rem;
 }
+.skill__container:hover{
+    animation: skills_animated 2s ;
+}
 
 .skills__img{
     width: 25%;
@@ -244,6 +251,105 @@ header{
 .title--color{
 
     color: var(--color-secondary);
+}
+
+.custom-shape-divider-top-1627188192 {
+    position: absolute;
+    
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    bottom: -159px;
+}
+
+.custom-shape-divider-top-1627188192 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 159px;
+    
+}
+
+.custom-shape-divider-top-1627188192 .shape-fill {
+    fill: #fafafa;
+}
+
+footer{
+    height: 30vh;
+    background: var(--color-quaternary);
+    padding: 100px;
+    color: var(--color-secondary);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+footer .social__media{
+    position: relative;
+    z-index: 10;
+}
+
+footer .social__media a{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid var(--color-secondary);
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+footer .social__media a svg{
+    width: 2rem;
+    height: 2rem;
+    
+    fill: var(--color-secondary);
+}
+
+footer .footer-title {
+    font-weight: 700;
+    font-family: 'Comfortaa', cursive;
+   
+}
+
+footer .author_page{
+    align-self: flex-end;
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+footer .author_page span{
+    color: var(--color-ternary);
+}
+
+.list-information{
+    position: relative;
+    z-index: 10;
+    
+}
+
+footer .list-information ul {
+    list-style: none;
+    
+}
+
+footer .list-information ul li a{
+    text-decoration: none;
+    color: var(--color-secondary);
+    
+}
+
+footer .list-information ul li {
+    margin: 10px 0;
+}
+
+footer .list-information ul li a:hover{
+    text-decoration: underline;
+    color: var(--color-quinary);
 }
 
 @keyframes arm_animated {
@@ -283,5 +389,24 @@ header{
     }
     100%{
         transform: translateY(0);
+    }
+}
+
+@keyframes skills_animated {
+    0%{
+        transform: translateY(0px);
+    }10%{
+        transform: translateY(-5px);
+    }20%{
+        transform: translateY(-10px);
+    }40%{
+        transform: translateY(-20px);
+        transform: scale(1.2);
+    }60%{
+        transform: translateY(10px);
+    }80%{
+        transform: translateY(5px);
+    }100%{
+        transform: translateY(0px);
     }
 }
