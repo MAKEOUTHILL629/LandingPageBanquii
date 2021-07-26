@@ -1,8 +1,10 @@
-:root , ::after , ::before{
-    --color-primary: #E63946;
-    --color-secondary: #F1FAEE;
-    --color-ternary: #A8DADC;
-    --color-quaternary: #457B9D;
-    --color-quinary: #1D3557;
-    --color-text-gray: #212F3D;
+:root,
+::after,
+::before {
+  --color-primary: #e63946;
+  --color-secondary: #f1faee;
+  --color-ternary: #a8dadc;
+  --color-quaternary: #457b9d;
+  --color-quinary: #1d3557;
+  --color-text-gray: #212f3d;
 }
