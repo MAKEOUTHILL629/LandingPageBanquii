@@ -118,6 +118,11 @@
     width: 80%;
     text-align: center;
     margin: 0 auto 30px;
+    font-size: 1rem;
+  }
+
+  .form-body .header-form h2 span{
+      font-size: 1.8rem;
   }
 
   .contact div.form-container {

@@ -48,6 +48,7 @@ main {
   height: 10vh;
 }
 
+
 .navbar ul .navbar__menu li a {
   text-decoration: none;
   display: inline-block;
@@ -90,13 +91,13 @@ nav ul div.show {
 }
 
 .navbar__menu-item--button {
-  height: 30px;
-  width: 120px;
+  /* height: 30px;
+  width: 120px; */
   background: var(--color-primary);
-
+    padding: 18px 32px;
   border-radius: 8px;
   text-align: center;
-  line-height: 30px;
+  
   text-decoration: none;
 }
 
@@ -112,9 +113,9 @@ nav ul div.show {
 
 .navbar__menu-item--button:hover {
   background: var(--color-quaternary);
-  height: 35px;
-  line-height: 35px;
-  width: 125px;
+  
+
+
   text-decoration: none;
   transition: 0.3s;
 }
@@ -131,10 +132,7 @@ nav ul div.show {
 .navbar__btn:hover svg {
   transform: scale(1.2);
 }
-.svg {
-  width: 550px;
-  height: 500px;
-}
+
 
 .disable {
   display: none;
@@ -161,17 +159,27 @@ nav ul div.show {
 }
 
 .hero__main {
-  width: 100%;
-  height: 100%;
+    margin: 0 auto;
+  width: 90%;
+  height: 90%;
   display: flex;
   font-family: "Poppins", sans-serif;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
+.hero__img{
+   width: 60%;
+}
+
+.svg{
+    width: 90%;
+    max-width: 700px;
+}
+
 .hero__main .hero_text {
-  width: 450px;
-  margin-left: 120px;
+  width: 35%;
+  
 }
 
 .hero__main .hero_text .hero__title span {
@@ -182,25 +190,28 @@ nav ul div.show {
 .hero__main .hero_text .hero__title {
   color: var(--color-quaternary);
   font-weight: 400;
+  font-size: 2rem;
 }
 
 .hero__main .hero_text .hero__copy {
   color: #1d355788;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .hero__main .hero_text .hero__cta {
   text-decoration: none;
   color: whitesmoke;
   background: var(--color-primary);
-  padding: 8px;
+  padding: 18px 32px;
+  font-size: 1rem;
+  font-weight: bold;
   border-radius: 12px;
   display: inline-block;
 }
 
 .hero__main .hero_text .hero__cta:hover {
   background: var(--color-quaternary);
-  padding: 10px;
+  
 
   transition: 0.3s;
 }
@@ -429,7 +440,7 @@ footer .list-information ul li a:hover {
   }
 }
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
   .hero__main {
     flex-wrap: wrap;
   }
@@ -437,16 +448,31 @@ footer .list-information ul li a:hover {
   .hero__img {
     height: 45%;
   }
-}
+} */
 
 @media screen and (max-width: 800px) {
-  .hero__main {
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
+    .navbar ul.show__menu{
+        align-items: center;
+    }
+    .navbar ul .navbar__item--logo .navbar__title{
+        font-size: 4rem;
+    }
+
+    .navbar ul{
+        padding-left: 10px;
+    }
+
+    .navbar__menu-item--button{
+        background: none;
+    }
+  
+    .hero__main {
+        flex-direction: column;
+        height: 80%;
+    }
 
   .hero__img {
-    height: 40%;
+    height: 80%;
   }
 
   .navbar__btn {
@@ -454,8 +480,8 @@ footer .list-information ul li a:hover {
   }
 
   .navbar__btn svg {
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     fill: var(--color-quinary);
   }
 
@@ -479,10 +505,17 @@ footer .list-information ul li a:hover {
   }
 
   .hero__main .hero_text {
-    margin-left: 0;
+        width: 60%;
+        text-align: justify;
+  }
+
+  .hero__main .hero_text .hero__cta{
+      margin: 0 auto;
   }
   .navbar ul .navbar__menu li a {
-    color: whitesmoke;
+    color: #fafafa;
+    font-size: 1.5rem;
+
   }
 
   .about {
@@ -519,6 +552,17 @@ footer .list-information ul li a:hover {
 }
 
 @media screen and (max-width: 540px) {
+    .navbar ul.show__menu{
+        align-items: center;
+    }
+    .navbar ul .navbar__item--logo .navbar__title{
+        font-size: 3rem;
+    }
+
+
+    .navbar__menu-item--button{
+        background: none;
+    }
   .hero__main {
     align-content: flex-start;
   }
@@ -537,6 +581,11 @@ footer .list-information ul li a:hover {
 
   .navbar__btn {
     margin-right: 10px;
+  }
+
+  .navbar__btn svg{
+      width: 3rem;
+      height: 3rem;
   }
 
   .about .about__text {
@@ -585,6 +634,7 @@ footer .list-information ul li a:hover {
   }
 
   footer .author_page {
+      text-align: center;
     margin: 0;
     order: 3;
   }
