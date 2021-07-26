@@ -107,3 +107,59 @@
     text-align: right;
 }
 
+@media  screen and (max-width : 540px) {
+    .contact{
+        position: relative;
+        z-index: -2;
+    }
+
+    .form-body .header-form h2{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    
+    .contact div.form-container{
+        width: 70%;
+        border-radius: 12px;
+    }
+    .form-body .header-form{
+        margin: 0;
+    }
+    
+    .form-group{
+        margin: 0;
+    }
+
+    .contact .form-img{
+        z-index: -1;
+    }
+
+    .form-body{
+        width: 100%;
+    }
+
+    .form-group .input-group{
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    .form-group .input-group.right{
+        text-align: center;
+    }
+    
+
+    .contact .form-img{
+        right: -30px;
+        width: 100%;
+        top: -50px;
+        border-radius: 12px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    
+
+    .contact .form-img .text{
+        display: none;
+    }
+}
+
