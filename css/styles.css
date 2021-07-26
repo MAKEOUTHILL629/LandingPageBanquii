@@ -48,7 +48,6 @@ main {
   height: 10vh;
 }
 
-
 .navbar ul .navbar__menu li a {
   text-decoration: none;
   display: inline-block;
@@ -94,11 +93,11 @@ nav ul div.show {
   /* height: 30px;
   width: 120px; */
   border: 2px solid var(--color-primary);
-  
+
   padding: 18px 32px;
   border-radius: 8px;
   text-align: center;
-  
+
   text-decoration: none;
 }
 
@@ -113,7 +112,6 @@ nav ul div.show {
 }
 
 .navbar__menu-item--button:hover {
-  
   border: 2px solid var(--color-quaternary);
   color: var(--color-quaternary);
 
@@ -121,11 +119,9 @@ nav ul div.show {
   transition: 0.3s;
 }
 
-.navbar ul .navbar__menu li.navbar__menu-item--button:hover a{
+.navbar ul .navbar__menu li.navbar__menu-item--button:hover a {
   color: var(--color-quaternary);
 }
-
-
 
 .navbar__btn {
   margin-right: 30px;
@@ -139,7 +135,6 @@ nav ul div.show {
 .navbar__btn:hover svg {
   transform: scale(1.2);
 }
-
 
 .disable {
   display: none;
@@ -166,7 +161,7 @@ nav ul div.show {
 }
 
 .hero__main {
-    margin: 0 auto;
+  margin: 0 auto;
   width: 90%;
   height: 90%;
   display: flex;
@@ -175,18 +170,17 @@ nav ul div.show {
   align-items: center;
 }
 
-.hero__img{
-   width: 60%;
+.hero__img {
+  width: 60%;
 }
 
-.svg{
-    width: 90%;
-    max-width: 700px;
+.svg {
+  width: 90%;
+  max-width: 700px;
 }
 
 .hero__main .hero_text {
   width: 35%;
-  
 }
 
 .hero__main .hero_text .hero__title span {
@@ -218,7 +212,6 @@ nav ul div.show {
 
 .hero__main .hero_text .hero__cta:hover {
   background: var(--color-quaternary);
-  
 
   transition: 0.3s;
 }
@@ -458,30 +451,30 @@ footer .list-information ul li a:hover {
 } */
 
 @media screen and (max-width: 800px) {
-    .navbar ul.show__menu{
-        align-items: center;
-    }
-    .navbar ul .navbar__item--logo .navbar__title{
-        font-size: 4rem;
-    }
+  .navbar ul.show__menu {
+    align-items: center;
+  }
+  .navbar ul .navbar__item--logo .navbar__title {
+    font-size: 4rem;
+  }
 
-    .navbar ul{
-        padding-left: 10px;
-    }
-    .navbar__menu-item--button{
-      border: none;
-    }
-    .navbar ul .navbar__menu li.navbar__menu-item--button a{
-      color: var(--color-secondary);
-    }
-    .navbar__menu-item--button{
-        background: none;
-    }
-  
-    .hero__main {
-        flex-direction: column;
-        height: 80%;
-    }
+  .navbar ul {
+    padding-left: 10px;
+  }
+  .navbar__menu-item--button {
+    border: none;
+  }
+  .navbar ul .navbar__menu li.navbar__menu-item--button a {
+    color: var(--color-secondary);
+  }
+  .navbar__menu-item--button {
+    background: none;
+  }
+
+  .hero__main {
+    flex-direction: column;
+    height: 80%;
+  }
 
   .hero__img {
     height: 80%;
@@ -506,10 +499,11 @@ footer .list-information ul li a:hover {
     bottom: 0;
     right: 0;
 
-    background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
-
-
-
+    background-image: linear-gradient(
+      132.6deg,
+      rgba(71, 139, 214, 1) 23.3%,
+      rgba(37, 216, 211, 1) 84.7%
+    );
 
     text-align: center;
     display: flex;
@@ -520,17 +514,16 @@ footer .list-information ul li a:hover {
   }
 
   .hero__main .hero_text {
-        width: 60%;
-        text-align: justify;
+    width: 60%;
+    text-align: justify;
   }
 
-  .hero__main .hero_text .hero__cta{
-      margin: 0 auto;
+  .hero__main .hero_text .hero__cta {
+    margin: 0 auto;
   }
   .navbar ul .navbar__menu li a {
     color: #fafafa;
     font-size: 1.5rem;
-
   }
 
   .about {
@@ -567,17 +560,16 @@ footer .list-information ul li a:hover {
 }
 
 @media screen and (max-width: 540px) {
-    .navbar ul.show__menu{
-        align-items: center;
-    }
-    .navbar ul .navbar__item--logo .navbar__title{
-        font-size: 3rem;
-    }
+  .navbar ul.show__menu {
+    align-items: center;
+  }
+  .navbar ul .navbar__item--logo .navbar__title {
+    font-size: 3rem;
+  }
 
-
-    .navbar__menu-item--button{
-        background: none;
-    }
+  .navbar__menu-item--button {
+    background: none;
+  }
   .hero__main {
     align-content: flex-start;
   }
@@ -598,9 +590,9 @@ footer .list-information ul li a:hover {
     margin-right: 10px;
   }
 
-  .navbar__btn svg{
-      width: 3rem;
-      height: 3rem;
+  .navbar__btn svg {
+    width: 3rem;
+    height: 3rem;
   }
 
   .about .about__text {
@@ -649,7 +641,7 @@ footer .list-information ul li a:hover {
   }
 
   footer .author_page {
-      text-align: center;
+    text-align: center;
     margin: 0;
     order: 3;
   }
