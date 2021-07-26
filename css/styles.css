@@ -93,8 +93,9 @@ nav ul div.show {
 .navbar__menu-item--button {
   /* height: 30px;
   width: 120px; */
-  background: var(--color-primary);
-    padding: 18px 32px;
+  border: 2px solid var(--color-primary);
+  
+  padding: 18px 32px;
   border-radius: 8px;
   text-align: center;
   
@@ -107,18 +108,24 @@ nav ul div.show {
 }
 
 .navbar ul .navbar__menu li.navbar__menu-item--button a {
-  color: aliceblue;
+  color: var(--color-primary);
   font-weight: 500;
 }
 
 .navbar__menu-item--button:hover {
-  background: var(--color-quaternary);
   
-
+  border: 2px solid var(--color-quaternary);
+  color: var(--color-quaternary);
 
   text-decoration: none;
   transition: 0.3s;
 }
+
+.navbar ul .navbar__menu li.navbar__menu-item--button:hover a{
+  color: var(--color-quaternary);
+}
+
+
 
 .navbar__btn {
   margin-right: 30px;
@@ -461,7 +468,12 @@ footer .list-information ul li a:hover {
     .navbar ul{
         padding-left: 10px;
     }
-
+    .navbar__menu-item--button{
+      border: none;
+    }
+    .navbar ul .navbar__menu li.navbar__menu-item--button a{
+      color: var(--color-secondary);
+    }
     .navbar__menu-item--button{
         background: none;
     }
@@ -494,7 +506,10 @@ footer .list-information ul li a:hover {
     bottom: 0;
     right: 0;
 
-    background: var(--color-quaternary);
+    background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+
+
+
 
     text-align: center;
     display: flex;

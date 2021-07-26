@@ -1,0 +1,81 @@
+.plans{
+    position: relative;
+    background: whitesmoke;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.plans .card{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: #fafafa;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transition: .5s;
+}
+
+.plans .card .circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: black;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.plans .card .circle h2{
+    color:#fafafa;
+    font-size: 3rem;
+    padding:30px 0;
+    margin-top: 0;
+}
+
+
+.plans .card .content{
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    page-break-after: 20px;
+    left: 5%;
+}
+
+.plans .card .content ul{
+    text-align: left;
+}
+
+.plans .card .content p{
+    color: #666;
+}
+
+.plans .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px ;
+    background: black;
+    color: #fafafa;
+    border-radius:  40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.plans .card:nth-child(1) .circle,
+.plans .card:nth-child(1) .content a{
+    background: #7400b8;
+}
+
+.plans .card:nth-child(2) .circle,
+.plans .card:nth-child(2) .content a{
+    background: #5e60ce;
+}
+
+.plans .card:nth-child(3) .circle,
+.plans .card:nth-child(3) .content a{
+    background: #4ea8de;
+}
